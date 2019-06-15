@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Github Repo Search by User</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</head>
+<body>
+    <header role="banner">
+        <h1>Github Repo Search</h1>
+    </header>
+    <main role="main">
+        <section role="region">
+            <form>
+                <label>Search Username: 
+                    <input type="text" id="handle" required>
+                </label>
+                <button type="submit" id="submit">Submit</button>
+            </form>
+        </section>
+        <section role="region">
+            <div class="js-error-message error"></div>
+        </section>
+        <section role="region" class="js-results hidden">
+            <hr>
+            <h1>Github Repo Results for <span class="js-user"></span></h1>
+                <ul class="js-resultList">
+                    <li></li>
+                </ul>
+        </section>
+    </main>
+</body>
+</html>

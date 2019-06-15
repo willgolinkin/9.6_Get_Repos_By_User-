@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*table {
+    border: darkgray 2px solid;
+}
+
+td {
+    width: 30%;
+}*/
+
+.hidden {
+    display: none;
+}
+
+/*.headerRow {
+    background-color: lightgray;
+    border-bottom: darkgray 2px solid;
+}*/
+
+.error {
+    color: red;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 15px;
+}
