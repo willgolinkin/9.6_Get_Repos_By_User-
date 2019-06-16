@@ -53,7 +53,7 @@ function getRepos(handle) {
         $('.js-user').empty();
         $('.js-resultList').empty();
         $('.js-results').toggleClass('hidden');
-        $('#js-error-message').text(`Something went wrong: ${err.message}`);
+        $('.js-error-message').text(`Something went wrong: ${err.message}`);
     });
 }
 
