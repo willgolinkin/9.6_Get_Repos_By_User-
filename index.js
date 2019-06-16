@@ -22,7 +22,6 @@ function getRepos(handle) {
     .then(response => {
       if (response.ok) {
         return response.json();
-        console.log(responseJson);
       } else {
         throw new Error(response.statusText);
       }
@@ -45,6 +44,7 @@ function displayResults(responseJson, handle) {
     $('.js-resultList').append(
       `<li>${responseJson[i].name} - <a target="_new" href="${responseJson[i].html_url}">${responseJson[i].html_url}</a></li>`
     )};
+    console.log(responseJson);
   $('.js-results').removeClass('hidden');
 };
 
