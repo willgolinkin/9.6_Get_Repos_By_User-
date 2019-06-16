@@ -22,6 +22,7 @@ function getRepos(handle) {
     .then(response => {
       if (response.ok) {
         return response.json();
+        console.log(responseJson);
       } else {
         throw new Error(response.statusText);
       }
