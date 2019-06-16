@@ -23,7 +23,7 @@ function getRepos(handle) {
       if (response.ok) {
         return response.json();
       } else {
-      throw new Error(response.statusText);
+        throw new Error(response.statusText);
       }
     })
     .then(responseJson => displayResults(responseJson, handle))
