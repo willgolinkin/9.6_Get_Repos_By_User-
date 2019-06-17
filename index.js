@@ -37,6 +37,8 @@ function getRepos(handle) {
     const queryString = formatQueryParams(params);
     //create a string with the original URL and the new parameters
     const url = searchUrl  + handle + "/repos" + '?' + queryString;
+    //this also works:
+    //const url = `${baseUrl}${handle}/repos?${queryString}`;
     //log new url to console with user and query string added
     console.log(url);
     fetch(url, options)
